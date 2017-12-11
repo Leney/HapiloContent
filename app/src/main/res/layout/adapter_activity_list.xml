@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/adapter_list_bg" />
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="128dp"
+        android:layout_height="115.3dp"
+        android:layout_marginLeft="9.5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv1" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="跆拳道直播课"
+        android:textColor="#8a2626"
+        android:textSize="24.7sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_photo"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo" />
+
+    <TextView
+        android:id="@+id/tv_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/activity_list_time"
+        android:drawablePadding="5dp"
+        android:gravity="bottom"
+        android:text="2017-10-09"
+        android:textColor="#71472b"
+        android:textSize="17.8sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_list_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/activity_list_location"
+        android:drawablePadding="5dp"
+        android:gravity="bottom"
+        android:text="中央大道12C"
+        android:textColor="#71472b"
+        android:textSize="17.8sp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_list_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_list_time" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/activity_adapter_icon"
+        app:layout_constraintRight_toRightOf="@+id/iv1" />
+
+    <TextView
+        android:id="@+id/participate_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234人"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/icon"
+        app:layout_constraintRight_toRightOf="@+id/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="参与"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/participate_number"
+        app:layout_constraintRight_toRightOf="@+id/participate_number"
+        app:layout_constraintTop_toBottomOf="@+id/participate_number" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="众合能力"
+        android:textColor="#999999"
+        android:textSize="16sp"
+        android:id="@+id/tv"
+        android:ems="5"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.zhongke.content.view.StarBar
+        android:id="@+id/sb"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

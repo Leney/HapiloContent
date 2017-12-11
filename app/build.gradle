@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'me.tatarka.retrolambda'
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.zhongke.content"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // dex突破65535的限制
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi-v7a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+
+    }
+    // 编译支持Java8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+
+    }
+    //去掉重复依赖的netty
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/io.netty.versions.properties'
+        exclude 'META-INF/native/libnetty-transport-native-kqueue.jnilib'
+    }
+    // compileOptions.incremental = false
+
+
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    //图片异步加载Glide
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC1'
+    //异步响应式
+    compile 'io.reactivex:rxjava:1.3.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    //数据库
+    compile 'com.squareup.sqlbrite:sqlbrite:1.1.1'
+    //网络请求操作
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.0'
+    //解析数据，Gson方式json
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    //网络日志输出
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    //结合RxJava使用
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    //使用multidex支持库
+    compile 'com.android.support:multidex:1.0.1'
+    //模仿微信聊天的语音，表情
+    compile 'com.lqr.adapter:library:1.0.2'
+    compile 'com.lqr.recyclerview:library:1.0.2'
+    compile 'com.lqr.imagepicker:library:1.0.0'
+    compile 'com.lqr.optionitemview:library:1.0.7'
+    //    compile 'com.lqr.audio:library:1.0.0'
+    compile 'com.lqr.imagepicker:library:1.0.0'
+    //一个刷新库，支持各种view的刷新
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.7'
+    compile 'com.jaeger.statusbaruitl:library:1.3.5'
+    compile 'com.orhanobut:logger:1.15'
+    //    compile 'com.jakewharton:butterknife:7.0.1'
+    // 时间转换库
+    //    compile 'net.danlew:android.joda:2.9.9'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    //luban图片压缩
+    compile 'top.zibin:Luban:1.1.2'
+    compile project(':library')
+    //视频直播
+    //    compile 'com.github.CarGuo.GSYVideoPlayer:GSYVideoPlayer:v2.0.5'
+    compile 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-java:v2.0.6'
+    //根据你的需求
+    /*compile 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x64:v2.0.6'
+                    compile 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x86:v2.0.6'
+                    compile 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-arm64:v2.0.6'
+                    compile 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-armv5:v2.0.6'*/
+    compile 'com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-armv7a:v2.0.6'
+    //    compile project(':emojiLibrary')
+    //一个强大的RecyclerViewAdapter，具备一系列的特效。
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+    compile project(':emojiLibrary')
+    /*  // 共享账户moudle
+        compile project(':hapiloAccount')*/
+    /*  compile project(':hapilolocalchatmessage')*/
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/hapiloBase.jar')
+}
+repositories {
+    mavenCentral()
+}

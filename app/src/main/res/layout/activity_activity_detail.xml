@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_exercise_bg1">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.048"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.017"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.172"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.090"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.072"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.090"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.182"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.056"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.944"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.062"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.938"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.209"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.041"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.956"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.376"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.259"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.202"/>
+
+    <!-- 内容区域Fragment左-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.096"/>
+
+    <!-- 内容区域Fragment右-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.896"/>
+
+    <!-- 内容区域Fragment上-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.289"/>
+
+    <!-- 内容区域Fragment下-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.959"/>
+
+    <!-- 第一个tab左边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.130"/>
+
+    <!-- 第一个tab右边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.256"/>
+
+    <!-- 第二个tab左边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.283"/>
+
+    <!-- 第二个tab右边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.409"/>
+
+    <!-- 第三个tab左边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.438"/>
+
+    <!-- 第三个tab右边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.564"/>
+
+    <!-- 第四个tab左边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.593"/>
+
+    <!-- 第四个tab右边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.719"/>
+
+    <!-- 第五个tab左边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.746"/>
+
+    <!-- 第五个tab右边-->
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.872"/>
+
+    <!--绳索-->
+    <ImageView
+        android:id="@+id/activity_detail_top_lines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lines"
+        app:layout_constraintLeft_toRightOf="@id/guideline"/>
+
+    <!--顶部栅栏图片-->
+    <ImageView
+        android:id="@+id/activity_detail_top_hor_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_detail_top_hor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"/>
+
+    <!--底部横条背景-->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="66.7dp"
+        android:background="@drawable/activity_detail_bottom_img"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!--总的背景-->
+    <View
+        android:id="@+id/activity_detail_total_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/activity_detail_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline8"
+        app:layout_constraintRight_toRightOf="@id/guideline9"
+        app:layout_constraintTop_toTopOf="@id/guideline12"/>
+
+    <!-- Fragment部分-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_detail_viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@id/guideline21"
+        app:layout_constraintLeft_toLeftOf="@id/guideline18"
+        app:layout_constraintRight_toRightOf="@id/guideline19"
+        app:layout_constraintTop_toTopOf="@id/guideline20"/>
+
+    <!--内容背景-->
+    <View
+        android:id="@+id/activity_detail_content_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/space_2"
+        android:layout_marginRight="@dimen/space_2"
+        android:background="@mipmap/activity_detail_content_bg"
+        app:layout_constraintBottom_toBottomOf="@id/activity_detail_total_bg"
+        app:layout_constraintLeft_toLeftOf="@id/guideline10"
+        app:layout_constraintRight_toRightOf="@id/guideline11"
+        app:layout_constraintTop_toTopOf="@id/guideline12"/>
+
+    <!--tab部分-->
+    <!--第一个-->
+    <com.zhongke.content.view.TabView
+        android:id="@+id/activity_detail_tab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/guideline22"
+        app:layout_constraintRight_toRightOf="@id/guideline23"
+        app:layout_constraintTop_toTopOf="@id/guideline12"
+        tab:text="资料"
+        tab:textColor2="#662c15"
+        tab:textSize2="@dimen/text_size_18"
+        tab:topDrawable="@mipmap/activity_detail_top_tab1"/>
+    <!--第二个-->
+    <com.zhongke.content.view.TabView
+        android:id="@+id/activity_detail_tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/guideline24"
+        app:layout_constraintRight_toRightOf="@id/guideline25"
+        app:layout_constraintTop_toTopOf="@id/guideline12"
+        tab:text="资料"
+        tab:textColor2="#662c15"
+        tab:textSize2="@dimen/text_size_18"
+        tab:topDrawable="@mipmap/activity_detail_top_tab2"/>
+    <!--第三个-->
+    <com.zhongke.content.view.TabView
+        android:id="@+id/activity_detail_tab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/guideline26"
+        app:layout_constraintRight_toRightOf="@id/guideline27"
+        app:layout_constraintTop_toTopOf="@id/guideline12"
+        tab:text="资料"
+        tab:textColor2="#662c15"
+        tab:textSize2="@dimen/text_size_18"
+        tab:topDrawable="@mipmap/activity_detail_top_tab3"/>
+    <!--第四个-->
+    <com.zhongke.content.view.TabView
+        android:id="@+id/activity_detail_tab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/guideline28"
+        app:layout_constraintRight_toRightOf="@id/guideline29"
+        app:layout_constraintTop_toTopOf="@id/guideline12"
+        tab:text="资料"
+        tab:textColor2="#662c15"
+        tab:textSize2="@dimen/text_size_18"
+        tab:topDrawable="@mipmap/activity_detail_top_tab4"/>
+    <!--第五个-->
+    <com.zhongke.content.view.TabView
+        android:id="@+id/activity_detail_tab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/guideline30"
+        app:layout_constraintRight_toRightOf="@id/guideline31"
+        app:layout_constraintTop_toTopOf="@id/guideline12"
+        tab:text="资料"
+        tab:textColor2="#662c15"
+        tab:textSize2="@dimen/text_size_18"
+        tab:topDrawable="@mipmap/activity_detail_top_tab5"/>
+
+    <!-- 左边灯-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_detail_light_left"
+        app:layout_constraintLeft_toLeftOf="@id/guideline13"
+        app:layout_constraintTop_toTopOf="@id/guideline15"/>
+
+    <!--右边灯-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_detail_light_right"
+        app:layout_constraintRight_toRightOf="@id/guideline14"
+        app:layout_constraintTop_toTopOf="@id/guideline16"/>
+
+    <!--绳索横梁-->
+    <ImageView
+        android:id="@+id/activity_detail_top_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_detail_top"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="@id/guideline3"/>
+
+    <!--企鹅-->
+    <ImageView
+        android:id="@+id/activity_detail_point_bird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_detail_bird"
+        app:layout_constraintBottom_toTopOf="@id/guideline17"
+        app:layout_constraintRight_toRightOf="@id/guideline14"/>
+
+    <!--返回按钮背景-->
+    <ImageView
+        android:id="@+id/activity_detail_back_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_detail_back_bg"
+        app:layout_constraintBottom_toTopOf="@id/guideline7"
+        app:layout_constraintLeft_toLeftOf="@id/guideline5"/>
+
+    <!--返回按钮图片-->
+    <ImageView
+        android:id="@+id/activity_detail_back_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_6"
+        android:src="@mipmap/activity_detail_back"
+        app:layout_constraintBottom_toBottomOf="@id/activity_detail_back_bg"
+        app:layout_constraintLeft_toLeftOf="@id/activity_detail_back_bg"
+        app:layout_constraintRight_toRightOf="@id/activity_detail_back_bg"
+        app:layout_constraintTop_toTopOf="@id/activity_detail_back_bg"/>
+
+    <!-- 标题-->
+    <TextView
+        android:id="@+id/activity_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_4"
+        android:background="@drawable/activity_detail_title_bg"
+        android:ellipsize="end"
+        android:gravity="center_horizontal|top"
+        android:maxLines="1"
+        android:text="迪士尼乐园游"
+        android:textColor="#622f17"
+        android:textSize="@dimen/text_size_26"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/guideline7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <!--转盘底座-->
+    <ImageView
+        android:id="@+id/activity_detail_duo_bottom_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginStart="@dimen/space_4"
+        android:src="@mipmap/activity_detail_duo_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/activity_detail_content_bg"/>
+
+    <!--转盘-->
+    <ImageView
+        android:id="@+id/activity_detail_duo_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_6"
+        android:src="@mipmap/live_lobby_rorate_shake"
+        app:layout_constraintBottom_toBottomOf="@id/activity_detail_duo_bottom_img"
+        app:layout_constraintLeft_toLeftOf="@id/activity_detail_duo_bottom_img"
+        app:layout_constraintRight_toRightOf="@id/activity_detail_duo_bottom_img"/>
+
+    <!-- 转盘上众可标志-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/live_lobby_rorate_center"
+        app:layout_constraintBottom_toBottomOf="@id/activity_detail_duo_img"
+        app:layout_constraintRight_toRightOf="@id/activity_detail_duo_img"/>
+
+    <!--开始活动按钮-->
+    <ImageView
+        android:id="@+id/activity_detail_join_act_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"
+        android:src="@drawable/activity_detail_join_btn_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <!--活动进行中按钮-->
+    <ImageView
+        android:id="@+id/activity_detail_doing_act_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"
+        android:src="@mipmap/activity_detail_doing_img"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <!--未开始按钮-->
+    <ImageView
+        android:id="@+id/activity_detail_no_start_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"
+        android:src="@drawable/activity_detail_no_start"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <!-- 最底部的线-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/activity_detail_bottom_line"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

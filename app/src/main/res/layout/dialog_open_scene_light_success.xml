@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scene_lights_bg">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:minHeight="387.3dp"
+        android:minWidth="458.7dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scene_lights_bg2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textColor="#b4492c"
+            android:textSize="31sp"
+            android:text="小主人，\n情景灯已为您全部点亮了哟!\n么么哒!"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/scene_light_success_guideline1"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/scene_light_success_cancel_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scene_lights_cancle_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/scene_light_success_guideline2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/scene_light_success_next_iv" />
+
+        <ImageView
+            android:id="@+id/scene_light_success_next_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scene_lights_next_iv"
+            app:layout_constraintBottom_toBottomOf="@+id/scene_light_success_cancel_iv"
+            app:layout_constraintLeft_toRightOf="@+id/scene_light_success_cancel_iv"
+            app:layout_constraintRight_toRightOf="parent" />
+        <android.support.constraint.Guideline
+            android:id="@+id/scene_light_success_guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.356" />
+        <android.support.constraint.Guideline
+            android:id="@+id/scene_light_success_guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9225" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/livelobby_item_bg"
+    android:paddingBottom="10.7dp"
+    android:paddingLeft="6.7dp"
+    android:paddingRight="6.7dp"
+    android:paddingTop="10.7dp">
+    <ImageView
+        android:id="@+id/item_live_lobby_live_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintDimensionRatio="1.75"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/item_live_lobby_guideline1" />
+
+
+    <ImageView
+        android:id="@+id/item_live_lobby_live_tip_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.3"
+        android:background="@color/black"
+        app:layout_constraintDimensionRatio="2.628"
+        app:layout_constraintLeft_toLeftOf="@+id/item_live_lobby_live_iv"
+        app:layout_constraintRight_toLeftOf="@+id/item_live_lobby_guideline2" />
+    <TextView
+        android:id="@+id/item_live_lobby_live_actiontype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="直播课"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/item_live_lobby_live_tip_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/item_live_lobby_live_tip_bg"
+        app:layout_constraintRight_toRightOf="@+id/item_live_lobby_live_tip_bg"
+        app:layout_constraintTop_toTopOf="@+id/item_live_lobby_live_tip_bg" />
+    <TextView
+        android:id="@+id/item_live_lobby_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:text="小学英语0元系列直播-情景交际"
+        android:textColor="#622f17"
+        android:textSize="24.7sp"
+        app:layout_constraintLeft_toRightOf="@+id/item_live_lobby_live_iv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_live_lobby_live_iv"
+        android:layout_marginTop="6dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/item_live_lobby_kind_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="英语|"
+        android:textColor="#b78168"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_live_lobby_live_iv"
+        app:layout_constraintLeft_toLeftOf="@+id/item_live_lobby_title_tv"
+        app:layout_constraintTop_toTopOf="@+id/item_live_lobby_live_iv" />
+
+    <TextView
+        android:id="@+id/item_live_lobby_date_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="9月30日19:00上课"
+        android:textColor="#b78168"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_live_lobby_live_iv"
+        app:layout_constraintLeft_toRightOf="@+id/item_live_lobby_kind_tv"
+        app:layout_constraintTop_toTopOf="@+id/item_live_lobby_live_iv" />
+    <TextView
+        android:id="@+id/item_live_lobby_fare_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="免费  "
+        android:textColor="#5cb87e"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_live_lobby_live_iv"
+        app:layout_constraintLeft_toLeftOf="@+id/item_live_lobby_title_tv" />
+
+    <TextView
+        android:id="@+id/item_live_lobby_sign_up_count_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="219已经报名"
+        android:textColor="#5cb87e"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_live_lobby_live_iv"
+        app:layout_constraintLeft_toRightOf="@+id/item_live_lobby_fare_tv" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/item_live_lobby_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3608" />
+    <android.support.constraint.Guideline
+        android:id="@+id/item_live_lobby_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1644" />
+</android.support.constraint.ConstraintLayout>

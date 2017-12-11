@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <Button
+        android:id="@+id/main_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="直播大厅"/>
+
+    <Button
+        android:id="@+id/main_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的活动"/>
+
+    <Button
+        android:id="@+id/main_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的家"/>
+    <Button
+        android:id="@+id/main_btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的愿望"/>
+    <Button
+        android:id="@+id/main_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抢答活动"/>
+    <Button
+        android:id="@+id/main_btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获得奖励"/>
+    <Button
+        android:id="@+id/main_btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新版活动详情"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/main_btn8"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="显示打开台灯dialog"/>
+
+        <Button
+            android:id="@+id/main_btn9"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="显示打开光照dialog"/>
+        <Button
+            android:id="@+id/main_btn10"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="显示打开温度dialog"/>
+        <Button
+            android:id="@+id/main_btn11"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="显示打开湿度dialog"/>
+        <Button
+            android:id="@+id/main_btn12"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="显示打开红外dialog"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新版活动列表" />
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/event_scenes_bg">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/space_18"
+        android:layout_marginEnd="@dimen/space_40"
+        android:layout_marginLeft="@dimen/space_40"
+        android:layout_marginRight="@dimen/space_40"
+        android:layout_marginStart="@dimen/space_40"
+        android:layout_marginTop="@dimen/space_63"
+        android:background="@drawable/mine_home_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mine_home_family_member_img"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/space_32"
+            android:layout_marginStart="@dimen/space_32"
+            android:layout_marginTop="@dimen/space_26"
+            android:background="@mipmap/mine_home_member_bg"
+            android:paddingLeft="@dimen/space_5"
+            android:paddingRight="@dimen/space_5"
+            android:src="@mipmap/family_member_img"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--家庭成员部分-->
+        <FrameLayout
+            android:id="@+id/mine_home_family_members_lay"
+            android:layout_width="0dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="@dimen/space_32"
+            android:layout_marginLeft="@dimen/space_9"
+            android:layout_marginRight="@dimen/space_32"
+            android:layout_marginStart="@dimen/space_9"
+            android:background="@mipmap/mine_home_member_icon_lay_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/mine_home_family_member_img"
+            app:layout_constraintLeft_toRightOf="@+id/mine_home_family_member_img"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mine_home_family_member_img">
+
+            <com.zhongke.content.view.MyHomeTitleView
+                android:id="@+id/my_photo_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/mine_home_my_thinking_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_7"
+            android:layout_marginRight="@dimen/space_7"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@drawable/mine_home_my_thinking"
+            android:paddingBottom="@dimen/space_7"
+            android:paddingLeft="@dimen/space_2"
+            android:paddingRight="@dimen/space_2"
+            android:src="@mipmap/mine_home_my_thinking_img"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mine_home_family_members_lay" />
+
+        <!-- 中间视图的背景-->
+        <View
+            android:id="@+id/mine_home_center_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_17"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginStart="@dimen/space_17"
+            android:background="@drawable/mine_home_center_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/mine_home_my_thinking_btn"
+            app:layout_constraintTop_toBottomOf="@+id/mine_home_family_members_lay"
+            app:layout_constraintTop_toTopOf="@id/mine_home_my_thinking_btn" />
+
+        <!-- 家规家训-->
+        <View
+            android:id="@+id/mine_home_family_rules_bg"
+            android:layout_width="208dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_6"
+            android:background="@drawable/mine_home_family_rules"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/mine_home_center_bg"
+            app:layout_constraintTop_toTopOf="@+id/mine_home_center_bg" />
+
+        <ImageView
+            android:id="@+id/mine_home_family_rules_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_28"
+            android:src="@mipmap/mine_home_family_rule_img"
+            app:layout_constraintLeft_toLeftOf="@+id/mine_home_family_rules_bg"
+            app:layout_constraintRight_toRightOf="@+id/mine_home_family_rules_bg"
+            app:layout_constraintTop_toTopOf="@+id/mine_home_family_rules_bg" />
+
+        <ListView
+            android:id="@+id/mine_home_family_rules_list_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_4"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="@id/mine_home_family_rules_bg"
+            app:layout_constraintLeft_toLeftOf="@+id/mine_home_family_rules_bg"
+            app:layout_constraintRight_toRightOf="@+id/mine_home_family_rules_bg"
+            app:layout_constraintTop_toBottomOf="@+id/mine_home_family_rules_img" />
+
+        <!-- 心声展示的背景-->
+        <View
+            android:id="@+id/mine_home_think_show_bg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginEnd="@dimen/space_12"
+            android:layout_marginLeft="@dimen/space_8"
+            android:layout_marginRight="@dimen/space_12"
+            android:layout_marginStart="@dimen/space_8"
+            android:layout_marginTop="@dimen/space_6"
+            android:background="@drawable/mine_home_center_think_bg"
+            app:layout_constraintBottom_toBottomOf="@id/mine_home_center_bg"
+            app:layout_constraintLeft_toLeftOf="@id/mine_home_center_bg"
+            app:layout_constraintRight_toLeftOf="@id/mine_home_family_rules_bg"
+            app:layout_constraintTop_toTopOf="@+id/mine_home_center_bg" />
+
+        <!--心声展示的列表-->
+        <com.zhongke.content.recyclerview.BaseRecyclerView
+            android:id="@+id/mine_home_think_show_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/space_8"
+            android:layout_marginEnd="@dimen/space_7"
+            android:layout_marginLeft="@dimen/space_7"
+            android:layout_marginRight="@dimen/space_7"
+            android:layout_marginStart="@dimen/space_7"
+            android:layout_marginTop="@dimen/space_8"
+            android:background="@drawable/mine_home_think_show_bg"
+            app:layout_constraintBottom_toBottomOf="@id/mine_home_think_show_bg"
+            app:layout_constraintLeft_toLeftOf="@id/mine_home_think_show_bg"
+            app:layout_constraintRight_toRightOf="@id/mine_home_think_show_bg"
+            app:layout_constraintTop_toTopOf="@id/mine_home_think_show_bg" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/mine_home_top_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:background="@mipmap/min_home_bottom_img"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/my_home_back"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

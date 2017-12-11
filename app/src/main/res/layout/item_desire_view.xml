@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_desire_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_desire_bg1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/desire_bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/desire_h00k_left"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18.7dp"
+        android:src="@drawable/desire_nail"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_guideline1"
+        app:layout_constraintLeft_toLeftOf="@+id/item_desire_bg1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/desire_h00k_right"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="18.7dp"
+        android:src="@drawable/desire_nail"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_guideline1"
+        app:layout_constraintRight_toRightOf="@+id/item_desire_bg1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/props_blue"
+        app:layout_constraintLeft_toLeftOf="@+id/item_desire_bg1"
+        app:layout_constraintTop_toBottomOf="@+id/desire_h00k_left" />
+
+    <TextView
+        android:id="@+id/tv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进行中"
+        android:textColor="#fff"
+        android:textSize="19.3sp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv"
+        app:layout_constraintLeft_toLeftOf="@+id/iv"
+        app:layout_constraintRight_toRightOf="@+id/iv"
+        app:layout_constraintTop_toTopOf="@+id/iv" />
+
+    <ImageView
+        android:id="@+id/item_desire_icon_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/desire_content_default_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/item_desire_guide_line2"
+        app:layout_constraintLeft_toLeftOf="@+id/item_desire_bg1"
+        app:layout_constraintRight_toRightOf="@+id/item_desire_bg1"
+        app:layout_constraintTop_toTopOf="@+id/desire_bg2" />
+
+    <ImageView
+        android:id="@+id/desire_bg2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/desire_bg2"
+        app:layout_constraintBottom_toBottomOf="@+id/item_desire_guide_line2"
+        app:layout_constraintLeft_toLeftOf="@+id/item_desire_bg1"
+        app:layout_constraintRight_toRightOf="@+id/item_desire_bg1"
+        app:layout_constraintTop_toBottomOf="@+id/iv" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/item_desire_guide_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0956" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/item_desire_guide_line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8051" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/item_desire_guide_line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.911" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/wishing_cave_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0919" />
+
+</android.support.constraint.ConstraintLayout>

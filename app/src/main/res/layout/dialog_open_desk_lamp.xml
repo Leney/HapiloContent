@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_desk_lamp_background">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dialog_desk_lamp_wave1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dialog_desk_lamp_boy1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="45dp" />
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dialog_desk_lamp_wave2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dialog_desk_lamp_lamp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="330dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="63dp" />
+
+    <TextView
+        android:id="@+id/desk_lamp_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="37sp"
+        android:text="@string/confirm"
+        android:textStyle="bold"
+        android:textColor="@drawable/selector_dialog_desk_lamp_text"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/selector_dialog_desk_lamp_textbg"
+        android:layout_marginBottom="189dp" />
+
+    <TextView
+        android:id="@+id/desk_lamp_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="37sp"
+        android:text="@string/setting"
+        android:textStyle="bold"
+        android:textColor="@drawable/selector_dialog_desk_lamp_text"
+        android:gravity="center"
+        app:layout_constraintRight_toLeftOf="@id/desk_lamp_sure"
+        android:layout_marginRight="32dp"
+        app:layout_constraintTop_toTopOf="@id/desk_lamp_sure"
+        app:layout_constraintBottom_toBottomOf="@id/desk_lamp_sure"
+        android:background="@drawable/selector_dialog_desk_lamp_textbg" />
+
+    <TextView
+        android:id="@+id/tips_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textColor="@color/blue_0d4393"
+        android:textStyle="bold"
+        android:text="@string/desklamp_tips_text"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="76dp"
+        app:layout_constraintBottom_toTopOf="@id/desk_lamp_setting"
+        android:layout_marginBottom="37dp"/>
+
+</android.support.constraint.ConstraintLayout>

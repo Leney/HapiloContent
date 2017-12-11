@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/answer_content_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/answer_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_26"
+            android:paddingLeft="@dimen/space_10"
+            android:paddingRight="@dimen/space_10"
+            android:text="李白《下终南山》“长歌吟松风，曲尽河星稀”中，“松风”指的是？"
+            android:textColor="@color/answer_topic_color"
+            android:textSize="@dimen/text_size_26"/>
+
+        <!-- 倒计时控件-->
+        <com.zhongke.content.view.CountDownTextView
+            android:id="@+id/answer_count_down_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@drawable/count_down_clock_bg"
+            android:gravity="center"
+            android:text="00:30"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        <com.zhongke.content.view.OptionsLayout2
+            android:id="@+id/answer_options_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center_horizontal"/>
+
+        <!-- 抢答按钮-->
+        <ImageView
+            android:id="@+id/answer_quick_answer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_quick_answer_bg"/>
+    </LinearLayout>
+
+    <com.zhongke.content.view.PartInLayout2
+        android:id="@+id/part_in_list_lay"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

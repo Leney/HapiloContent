@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/head"
+        layout="@layout/common_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/head"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/act_detail_item_shape">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_weight="1"
+                android:background="@drawable/session_shape"
+                android:padding="8dp">
+
+                <com.zhongke.content.recyclerview.BaseRecyclerView
+                    android:id="@+id/session_recyclerview_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.zhongke.content.recyclerview.BaseRecyclerView>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_lay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/space_10"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/le"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/send_shape">
+
+                    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+                        android:id="@+id/session_refreshlayout_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.zhongke.content.recyclerview.BaseRecyclerView
+                            android:id="@+id/session_recyclerview_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                        </com.zhongke.content.recyclerview.BaseRecyclerView>
+                    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/seesion_content_vocie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:background="@mipmap/vocie"/>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+                        <EditText
+                            android:id="@+id/session_content_editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_shape"
+                            android:paddingLeft="5dp"/>
+
+                        <Button
+                            android:id="@+id/btnAudio"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_shape"
+                            android:text="@string/please_to_talk"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/space_18"
+                            android:visibility="gone"/>
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/session_content_emoj_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:background="@mipmap/iv_sticker"/>
+
+                    <ImageView
+                        android:id="@+id/session_content_add_picture_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:background="@mipmap/chat_add"/>
+
+                    <TextView
+                        android:id="@+id/session_message_send_tv"
+                        android:layout_width="50dp"
+                        android:layout_height="@dimen/space_30"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:background="@drawable/send_shape"
+                        android:gravity="center"
+                        android:text="发送"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/session_visible_layout_manager"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content">
+                    <!--表情区-->
+                    <com.lqr.emoji.EmotionLayout
+                        android:id="@+id/layout_elEmotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:visibility="gone"
+                        />
+                    <LinearLayout
+                        android:id="@+id/session_visible_layout_picture"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+
+                        android:layout_height="wrap_content">
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="15dp"
+                               android:id="@+id/session_galley_layout"
+                               android:orientation="vertical">
+                               <ImageView
+                                   android:layout_width="40dp"
+                                   android:layout_height="40dp"
+                                   android:background="@drawable/selector_session_func"
+                                   android:src="@drawable/ic_func_pic"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_centerHorizontal="true"
+                                   android:layout_gravity="center_horizontal"
+                                   android:layout_marginTop="5dp"
+                                   android:text="相册"
+                                   android:textSize="12sp"/>
+                           </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:id="@+id/session_camera_layout"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/selector_session_func"
+                                android:src="@drawable/ic_func_shot"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text="拍照"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

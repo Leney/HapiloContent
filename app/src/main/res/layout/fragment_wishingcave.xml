@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/wishing_cave_bg1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/desire_bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18.7dp"
+        android:src="@drawable/desire_nail"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_guideline1"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_bg1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wishing_cave_top_line1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="18.7dp"
+        android:src="@drawable/desire_nail"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_guideline1"
+        app:layout_constraintRight_toRightOf="@+id/wishing_cave_bg1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/wishing_cave_bg2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="7.3dp"
+        android:background="@drawable/wishing_cave_bg2"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_bg1"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_bg1"
+        app:layout_constraintRight_toLeftOf="@+id/wishing_cave_guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/wishing_cave_top_line1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/wishing_cave_tip_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="这是一个神奇的树洞,"
+        android:textColor="#5e2908"
+        android:textSize="26.7sp"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_bg2"
+        app:layout_constraintRight_toRightOf="@+id/wishing_cave_bg2"
+        app:layout_constraintTop_toTopOf="@+id/wishing_cave_bg2" />
+
+    <TextView
+        android:id="@+id/wishing_cave_tip_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="对着树洞说出你的愿望吧!"
+        android:textColor="#5e2908"
+        android:textSize="26.7sp"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_bg2"
+        app:layout_constraintRight_toRightOf="@+id/wishing_cave_bg2"
+        app:layout_constraintTop_toBottomOf="@+id/wishing_cave_tip_tv1" />
+<!--    <EditText
+        android:id="@+id/wishing_cave_input_edit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/wishing_cave_input_bg"
+        android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_bg1"
+        app:layout_constraintRight_toLeftOf="@+id/wishing_cave_voice_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_voice_iv"
+        app:layout_constraintTop_toTopOf="@+id/wishing_cave_voice_iv" />-->
+    <TextView
+        android:id="@+id/wishing_cave_input_edit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12dp"
+        android:text="按住开始许愿，松开完成许愿"
+        android:gravity="center"
+        android:background="@drawable/wishing_cave_input_bg"
+        android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_bg1"
+        app:layout_constraintRight_toLeftOf="@+id/wishing_cave_voice_iv"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_voice_iv"
+        app:layout_constraintTop_toTopOf="@+id/wishing_cave_voice_iv" />
+
+    <ImageView
+        android:id="@+id/wishing_cave_voice_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14.7dp"
+        android:src="@mipmap/wishing_cave_voice_iv"
+        android:layout_marginTop="60dp"
+        app:layout_constraintLeft_toRightOf="@+id/wishing_cave_input_edit"
+        app:layout_constraintRight_toRightOf="@+id/wishing_cave_bg2"
+        app:layout_constraintTop_toBottomOf="@+id/wishing_cave_tip_tv2" />
+
+    <ImageView
+        android:id="@+id/wishing_cave_finish_wishing_iv"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/wishing_cave_btn"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_bg2"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_bg2"
+        android:layout_marginBottom="20.7dp"
+        app:layout_constraintRight_toRightOf="@+id/wishing_cave_bg2"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/wishing_cave_bottom_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:layout_marginRight="3.5dp"
+        android:background="@mipmap/wishing_bottom_bg"
+        android:layout_marginLeft="12.7dp"
+        android:layout_marginTop="11.3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_float_iv"
+        app:layout_constraintLeft_toLeftOf="@+id/wishing_cave_float_iv"
+        app:layout_constraintRight_toRightOf="@+id/wishing_cave_float_iv"
+        app:layout_constraintTop_toTopOf="@+id/wishing_cave_float_iv"/>
+    <ImageView
+        android:id="@+id/wishing_cave_float_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+         android:layout_marginBottom="26.7dp"
+        android:layout_marginRight="23.3dp"
+        android:background="@mipmap/wishing_float_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/wishing_cave_bg1"
+        app:layout_constraintLeft_toRightOf="@+id/wishing_cave_bg2"
+        app:layout_constraintRight_toRightOf="@+id/wishing_cave_bg1"
+        app:layout_constraintTop_toTopOf="@+id/wishing_cave_bg2"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/wishing_cave_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0919"
+     />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/wishing_cave_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6182" />
+
+
+</android.support.constraint.ConstraintLayout>

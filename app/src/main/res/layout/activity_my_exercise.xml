@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/my_exercise_bg1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginEnd="@dimen/space_16"
+        android:layout_marginLeft="@dimen/space_16"
+        android:layout_marginRight="@dimen/space_16"
+        android:layout_marginStart="@dimen/space_16"
+        android:layout_marginTop="@dimen/space_18"
+        android:background="@drawable/my_exercise_bg2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/exercise_light"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="46.7dp"
+            android:background="@drawable/my_exercise_bgleft">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:background="@drawable/my_exercise_bg3">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="84dp"
+                    android:paddingTop="4dp">
+
+                    <Button
+                        android:id="@+id/tv_to_be_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/exercise_uncheck"
+                        android:gravity="center"
+                        android:text="待完成"
+                        android:textColor="#a9651a"
+                        android:textSize="26.7sp"/>
+
+                    <Button
+                        android:id="@+id/tv_processing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:background="@drawable/exercise_uncheck"
+                        android:gravity="center"
+                        android:text="进行中"
+                        android:textColor="#a9651a"
+                        android:textSize="26.7sp"/>
+
+                    <Button
+                        android:id="@+id/tv_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="36dp"
+                        android:background="@drawable/exercise_uncheck"
+                        android:gravity="center"
+                        android:text="已完成"
+                        android:textColor="#a9651a"
+                        android:textSize="26.7sp"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_fragment_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/my_exercise_bg3">
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/exercise_banner"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exercise_title"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/exercise_ribbon"/>
+
+    <ImageView
+        android:id="@+id/my_exercise_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/event_close_button"/>
+
+</RelativeLayout>

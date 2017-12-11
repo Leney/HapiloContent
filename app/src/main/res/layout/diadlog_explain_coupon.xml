@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="322dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/dialog_bg"
+        android:paddingBottom="@dimen/space_10">
+
+        <LinearLayout
+            android:id="@+id/le_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/space_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你的等级尚未达到创建标准！"
+                android:textColor="#c14c1f"
+                android:textSize="@dimen/text_size_16"/>
+
+
+            <TextView
+                android:id="@+id/look_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:text="查看等级特权》"
+                android:textColor="#60000000"
+                android:textSize="@dimen/text_size_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/le_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingLeft="@dimen/space_40"
+            android:paddingRight="@dimen/space_40"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/no_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_room_no"
+                android:textColor="#c14c1f"
+                android:textSize="@dimen/text_size_16"/>
+
+            <EditText
+                android:id="@+id/home_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_40"
+                android:gravity="center_vertical"
+                android:background="@drawable/acount"
+                android:inputType="number"
+                android:textColor="#a82d2d"
+                android:paddingLeft="@dimen/space_5"
+                android:textSize="@dimen/space_24"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_10"
+            android:background="@drawable/sure"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/cancel"/>
+</RelativeLayout>

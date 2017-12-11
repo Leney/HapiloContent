@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形布局-->
+    <declare-styleable name="CircleLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="offset" format="integer" />
+    </declare-styleable>
+
+
+    <!-- 跑马灯效-->
+    <declare-styleable name="MarqueeView">
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawablePadding" format="dimension" />
+        <attr name="textSize" format="integer" />
+        <attr name="textColor" format="color" />
+        <!--数值越小越快-->
+        <attr name="speed" format="integer" />
+    </declare-styleable>
+
+    <!-- 首页左边阶段的按钮风格-->
+    <style name="stage_image_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginBottom">1dp</item>
+    </style>
+    <!--首页右侧按钮的风格 -->
+    <style name="right_image_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+    <!--年级按钮风格 -->
+    <style name="grade_image_view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <declare-styleable name="TabView">
+        <attr name="topDrawable" format="reference"/>
+        <attr name="text" format="string"/>
+        <attr name="textColor2" format="color"/>
+        <attr name="textSize2" format="integer"/>
+    </declare-styleable>
+</resources>

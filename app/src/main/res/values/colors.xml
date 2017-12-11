@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="green">#95d701</color>
+    <color name="horn_text_color">#b86314</color>
+    <color name="horn_bg_color">#e7c998</color>
+    <color name="act_detail_grid_bg">#fbf4da</color>
+    <color name="fun_content">#ad7430</color>
+    <color name="color1">#c46213</color>
+    <color name="yellow">#fcbb00</color>
+    <color name="e6c997">#e6c997</color>
+    <color name="text_color">#7f460b</color>
+    <color name="cheng">#e08940</color>
+    <color name="answer_bg">#43261b</color>
+    <color name="text_b07134">#b07134</color>
+
+    <color name="gray">#D9D9D9</color>
+
+    <color name="answer_topic_color">#20271e</color>
+
+    <color name="event_brown_txt">#966443</color>
+    <color name="event_red_txt">#ff3f3f</color>
+
+    <color name="blue_0d4393">#0d4393</color>
+    <color name="green_337a23">#337a23</color>
+    <color name="yellow_8b3502">#8b3502</color>
+    <color name="red_a30850">#a30850</color>
+
+</resources>

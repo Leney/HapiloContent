@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">HapiloContent</string>
+    <string name="start_act">开始活动</string>
+    <string name="more_award">想要更多礼物？点我、点我、点我 >></string>
+    <string name="set_target">本次目标：去设置 >></string>
+
+    <string name="voice_rec">手指上滑，取消发送</string>
+    <string name="voice_cancel">松开手指，取消发送</string>
+    <string name="voice_short">录音时间太短</string>
+    <string name="voice_failure">录音失败！</string>
+    <string name="send_audio_fail">发送语音失败，文件长度为0或语音权限没有开启</string>
+    <string name="please_to_talk">按住 说话</string>
+
+
+    <string name="choice_answer">请选择您的答案</string>
+    <string name="input_room_no">房间号&#160;</string>
+    <!--活动详情-->
+    <string name="event_location">广东省深圳市莲花山公园位于深圳市中心区北端,福田区红荔路上广东省深圳市莲花山公园位于深圳市中心区北端福田区红荔路上广东省深圳市莲花山公园位于深圳市中</string>
+    <string name="event_time">开始时间, 2017年7月26日 19:00</string>
+    <string name="event_introduce">周末去莲花山爬山,大家准备一些吃的喝的有的没的,计划是在那个地方集合,然后大家一起吃点东西,我们会提供这个那个,然后大家一起这样那样,联系电话1313131313131,刘小姐.</string>
+    <string name="event_award">1000元</string>
+    <string name="thirty_three_people">33人</string>
+    <string name="small_partner">这些小伙伴已经参加了:</string>
+    <!--台灯dialog-->
+    <string name="confirm">确定</string>
+    <string name="setting">设置</string>
+    <string name="desklamp_tips_text">台灯已为小主人准备好,请主人\n注意用眼!</string>
+    <string name="zhi_dao_la">知道啦</string>
+    <string name="next_step">下一步</string>
+    <string name="light_intensity_tips_text">小主人,\n当前感应室内光照强度为125,\n室外光照强度为1200,注意\n主人用眼强度,及时打开台灯!</string>
+    <string name="temperature_tips_text">小主人,\n今天天气很好,温度25°C,\n很适合出去运动呦</string>
+    <string name="humidity_tips_next">小主人,\n今天空气湿度大,降水强度25cm\n注意防水保暖哦!</string>
+    <string name="infrared_tips_text">小主人,\n欢迎来到你我的二人世界里,\n现在让我带你一起开启愿望之旅吧!</string>
+
+</resources>

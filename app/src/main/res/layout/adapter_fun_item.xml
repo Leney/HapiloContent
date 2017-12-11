@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fun_adapter_lay"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/space_30"
+              android:paddingLeft="@dimen/space_21"
+              android:paddingRight="@dimen/space_21">
+
+    <TextView
+        android:id="@+id/fun_adapter_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="趣味点1:明星亲临现场裁判"
+        android:textColor="@color/fun_content"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_23"/>
+
+    <!--<com.zhongke.content.view.WapGridView
+        android:id="@+id/fun_adapter_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:columnWidth="@dimen/space_102"
+        android:horizontalSpacing="@dimen/space_20"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="@dimen/space_10"/>-->
+
+    <com.zhongke.content.view.WapGridView
+        android:id="@+id/fun_adapter_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:horizontalSpacing="@dimen/space_12"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/space_10"/>
+</LinearLayout>

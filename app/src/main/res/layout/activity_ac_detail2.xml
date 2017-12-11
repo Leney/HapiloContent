@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    xmlns:marquee="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebdebb">
+
+    <!--标题和公告部分-->
+    <RelativeLayout
+        android:id="@+id/act_detail_title_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/title_bg"
+        android:paddingBottom="@dimen/space_5"
+        android:paddingTop="@dimen/space_5">
+
+        <ImageView
+            android:id="@+id/act_detail_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_back"/>
+
+        <com.zhongke.content.view.MarqueeView
+            android:id="@+id/act_detail_marquee_text"
+            android:layout_width="374dp"
+            android:layout_height="33dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/act_detail_horn_shape"
+            android:gravity="center"
+            android:paddingEnd="@dimen/space_6"
+            android:paddingLeft="@dimen/space_16"
+            android:paddingRight="@dimen/space_6"
+            android:paddingStart="@dimen/space_16"
+            marquee:drawableLeft="@mipmap/ic_horn"
+            marquee:drawablePadding="@dimen/space_5"
+            marquee:speed="10"
+            marquee:textColor="@color/white"
+            marquee:textSize="@dimen/text_size_12"/>
+
+        <!--<com.zhongke.launcher.view.MarqueeTextView
+            android:id="@+id/act_detail_marquee_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_73"
+            android:background="@drawable/horn_bg_shape"
+            android:drawableLeft="@mipmap/ic_horn"
+            android:drawablePadding="@dimen/space_8"
+            android:drawableStart="@mipmap/ic_horn"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:lines="1"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="@dimen/space_5"
+            android:paddingLeft="@dimen/space_40"
+            android:paddingRight="@dimen/space_10"
+            android:paddingTop="@dimen/space_5"
+            android:scrollHorizontally="true"
+            android:text="路漫漫其修远兮，吾将上下而求索"
+            android:textColor="@color/horn_text_color"
+            android:textSize="@dimen/text_size_14"/>-->
+    </RelativeLayout>
+
+    <!-- 右边开始活动部分-->
+    <LinearLayout
+        android:id="@+id/act_detail_start_act_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/act_detail_title_lay"
+        android:background="@color/act_detail_grid_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_7"
+        android:paddingRight="@dimen/space_7">
+
+        <ImageView
+            android:id="@+id/act_detail_start_act_img"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@mipmap/test_1"/>
+
+        <Button
+            android:id="@+id/act_detail_start_act_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:background="@mipmap/start_act_btn"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/act_detail_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_detail_title_lay"
+        android:layout_marginRight="@dimen/space_4"
+        android:layout_toLeftOf="@id/act_detail_start_act_lay"
+        android:layout_toStartOf="@id/act_detail_start_act_lay"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/act_detail_scroll_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_10">
+
+            <!-- 奖品奖励部分-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.zhongke.content.view.WapGridView
+                    android:id="@+id/act_detail_award_item_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/act_detail_item_shape"
+                    android:columnWidth="@dimen/space_100"
+                    android:horizontalSpacing="@dimen/space_40"
+                    android:numColumns="auto_fit"
+                    android:paddingBottom="@dimen/space_4"
+                    android:paddingLeft="@dimen/space_18"
+                    android:paddingRight="@dimen/space_18"
+                    android:paddingTop="@dimen/space_11"
+                    android:verticalSpacing="@dimen/space_10"/>
+
+                <!--<ImageView
+                    android:id="@+id/act_detail_set_more_gift_btn"
+                    style="@style/actDetailBtnStyle"
+                    android:layout_below="@id/act_detail_award_item_lay"
+                    android:layout_marginTop="@dimen/space_11"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/more_gift_click_me"/>-->
+
+                <TextView
+                    android:id="@+id/act_detail_set_more_gift_btn"
+                    style="@style/actDetailBtnStyle"
+                    android:layout_below="@id/act_detail_award_item_lay"
+                    android:layout_marginTop="@dimen/space_11"
+                    android:text="@string/more_award"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/award_text"/>
+            </RelativeLayout>
+
+
+            <!--参加人员部分-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_11">
+
+                <!--参加人员显示区域-->
+                <LinearLayout
+                    android:id="@+id/act_detail_member_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_346"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@mipmap/fight_family_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <!--对战家庭1-->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.zhongke.content.view.CircleLayout
+                            android:id="@+id/act_detail_circle_lay_family_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            circle:radius="@dimen/space_116">
+
+                            <ImageView
+                                android:id="@+id/act_detail_member_demo_img"
+                                android:layout_width="@dimen/space_57"
+                                android:layout_height="@dimen/space_57"
+                                android:background="@drawable/image_shape"
+                                android:scaleType="fitXY"
+                                android:src="@mipmap/ic_launcher"/>
+                        </com.zhongke.content.view.CircleLayout>
+
+                        <ImageView
+                            android:id="@+id/act_detail_family_logo_1"
+                            android:layout_width="@dimen/space_118"
+                            android:layout_height="@dimen/space_118"
+                            android:layout_gravity="center"
+                            android:background="@drawable/yuanhuan_red_bg_shape"
+                            android:padding="@dimen/space_3"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/ic_launcher"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/fight_blue_star_bg"/>
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@mipmap/vs"/>
+
+                    <!-- 对战家庭2-->
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.zhongke.content.view.CircleLayout
+                            android:id="@+id/act_detail_circle_lay_family_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            circle:radius="@dimen/space_116"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/fight_blue_star_bg"/>
+
+                        <ImageView
+                            android:id="@+id/act_detail_family_logo_2"
+                            android:layout_width="@dimen/space_118"
+                            android:layout_height="@dimen/space_118"
+                            android:layout_gravity="center"
+                            android:background="@drawable/yuanhuan_blue_bg_shape"
+                            android:padding="@dimen/space_3"
+                            android:src="@mipmap/ic_launcher"/>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!--本次目标按钮-->
+                <!--<TextView
+                    android:id="@+id/act_detail_set_target_btn"
+                    style="@style/actDetailBtnStyle"
+                    android:layout_below="@id/act_detail_member_lay"
+                    android:layout_marginTop="@dimen/space_18"
+                    android:text="@string/set_target"/>-->
+
+                <!--本次目标、团队贡献榜按钮-->
+                <TextView
+                    android:id="@+id/act_detail_team_contribute_btn"
+                    style="@style/actDetailBtnStyle"
+                    android:layout_below="@id/act_detail_member_lay"
+                    android:layout_marginTop="@dimen/space_11"
+                    android:text="我本次目标:5分   团队贡献榜：成成、琳琳、小萌"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/join_member_text"/>
+
+            </RelativeLayout>
+
+            <!--活动趣味部分-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_14"
+                android:background="@drawable/act_detail_item_shape2">
+
+                <!--<com.zhongke.launcher.view.WapListView
+                    android:id="@+id/act_detail_fun_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/space_26"
+                    android:background="@drawable/act_detail_item_shape"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:paddingBottom="@dimen/space_21"
+                    android:paddingTop="@dimen/space_48"/>-->
+
+                <com.zhongke.content.view.WapGridView
+                    android:id="@+id/act_detail_fun_listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="@dimen/space_14"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dp"
+                    android:numColumns="1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@mipmap/act_fun_text"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

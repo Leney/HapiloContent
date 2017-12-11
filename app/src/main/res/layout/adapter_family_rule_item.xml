@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/space_8"
+    android:paddingBottom="@dimen/space_8">
+    <TextView
+        android:id="@+id/family_rule_adapter_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#724426"
+        android:textSize="@dimen/text_size_20"
+        android:text="1."/>
+    <TextView
+        android:id="@+id/family_rule_adapter_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#724426"
+        android:textSize="@dimen/text_size_20"
+        android:text="家风家训xxxxx"/>
+
+</LinearLayout>

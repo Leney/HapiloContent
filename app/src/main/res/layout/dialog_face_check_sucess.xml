@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.5"
+    android:background="@android:color/black">
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/face_check_sucess_bg"
+        android:minHeight="239.3dp"
+        android:minWidth="382dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="主人，\n检测成功哟！"
+            android:textColor="@android:color/white"
+            android:textSize="36.7sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/face_check_sucess_guideline1" />
+
+        <ImageView
+            android:id="@+id/face_next_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/face_next_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/face_check_sucess_guideline2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:textSize="36.7sp"
+            app:layout_constraintBottom_toBottomOf="@+id/face_next_bg"
+            app:layout_constraintLeft_toLeftOf="@+id/face_next_bg"
+            app:layout_constraintRight_toRightOf="@+id/face_next_bg"
+            app:layout_constraintTop_toTopOf="@+id/face_next_bg" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/face_check_sucess_guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1755" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/face_check_sucess_guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9134" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

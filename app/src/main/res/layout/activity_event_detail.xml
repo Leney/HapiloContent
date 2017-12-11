@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/event_scenes_bg">
+
+    <!-- 中间大背景-->
+    <View
+        android:id="@+id/event_center_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginEnd="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginStart="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_17"
+        android:background="@drawable/event_outer_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <!--活动详情里面的布局-->
+    <ScrollView
+        android:id="@+id/event_scrollview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginEnd="@dimen/space_21"
+        android:layout_marginLeft="@dimen/space_21"
+        android:layout_marginRight="@dimen/space_21"
+        android:layout_marginStart="@dimen/space_21"
+        android:layout_marginTop="@dimen/space_53"
+        android:background="@drawable/act_detail_bg_shape"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/space_2"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingRight="@dimen/space_5"
+        android:paddingTop="@dimen/space_2"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="@+id/event_center_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/event_center_bg"
+        app:layout_constraintRight_toRightOf="@+id/event_center_bg"
+        app:layout_constraintTop_toTopOf="@+id/event_center_bg">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/event_scroll_root_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp">
+
+            <!--中间大图-->
+            <ImageView
+                android:id="@+id/event_show_img"
+                android:layout_width="0dp"
+                android:layout_height="194dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/event_show_img"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/event_lab_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_5"
+                android:paddingTop="@dimen/space_5"
+                android:text="活动详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_24"
+                app:layout_constraintBottom_toBottomOf="@+id/event_show_img"
+                app:layout_constraintLeft_toLeftOf="@+id/event_show_img"/>
+
+            <ImageView
+                android:id="@+id/divider_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_show_img"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/event_divier_line"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_show_img"/>
+
+            <ImageView
+                android:id="@+id/event_finish_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginTop="@dimen/space_9"
+                android:adjustViewBounds="true"
+                android:src="@drawable/event_complete"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider_line"/>
+
+            <!--活动地点-->
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/event_location_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/event_finish_btn"
+                tools:layout_editor_absoluteX="20dp"/>
+
+            <TextView
+                android:id="@+id/location_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/event_location"
+                android:textColor="@color/event_brown_txt"
+                android:textSize="21sp"
+                app:layout_constraintLeft_toRightOf="@+id/location_icon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/location_icon"/>
+
+            <!--活动时间-->
+            <ImageView
+                android:id="@+id/clock_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_9"
+                android:src="@drawable/event_clock_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/location_detail"/>
+
+            <TextView
+                android:id="@+id/clock_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/event_time"
+                android:textColor="@color/event_brown_txt"
+                android:textSize="21sp"
+                app:layout_constraintLeft_toRightOf="@+id/clock_icon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/clock_icon"/>
+
+            <!--活动介绍-->
+
+            <ImageView
+                android:id="@+id/introduce_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_9"
+                android:src="@drawable/event_introduce_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/clock_detail"/>
+
+            <TextView
+                android:id="@+id/introduce_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/event_introduce"
+                android:textColor="@color/event_brown_txt"
+                android:textSize="21sp"
+                app:layout_constraintLeft_toRightOf="@+id/introduce_icon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/introduce_icon"/>
+
+            <!--活动奖励-->
+            <ImageView
+                android:id="@+id/award_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_9"
+                android:src="@drawable/event_award_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/introduce_detail"/>
+
+            <TextView
+                android:id="@+id/award_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/event_award"
+                android:textColor="@color/event_red_txt"
+                android:textSize="21sp"
+                app:layout_constraintLeft_toRightOf="@+id/award_icon"
+                app:layout_constraintTop_toTopOf="@+id/award_icon"/>
+
+            <!--徽章1-->
+            <com.zhongke.content.view.WapGridView
+                android:id="@+id/badge_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_9"
+                android:columnWidth="25dp"
+                android:numColumns="auto_fit"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/award_icon"/>
+
+            <!--玩偶图片-->
+            <com.zhongke.content.view.WapGridView
+                android:id="@+id/doll_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_9"
+                android:columnWidth="100dp"
+                android:numColumns="auto_fit"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/badge_group"/>
+
+            <!--报名人数-->
+            <ImageView
+                android:id="@+id/sign_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_9"
+                android:src="@drawable/event_sign_icon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doll_group"/>
+
+            <TextView
+                android:id="@+id/sign_detail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="@string/thirty_three_people"
+                android:textColor="@color/event_brown_txt"
+                android:textSize="21sp"
+                app:layout_constraintLeft_toRightOf="@+id/sign_icon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/sign_icon"/>
+
+
+            <TextView
+                android:id="@+id/tv_partner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_9"
+                android:text="@string/small_partner"
+                android:textColor="@color/event_brown_txt"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sign_icon"
+                tools:layout_editor_absoluteX="20dp"/>
+
+            <!--小伙伴头像-->
+            <com.zhongke.content.view.WapGridView
+                android:id="@+id/head_portarit_group"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:columnWidth="65dp"
+                android:numColumns="auto_fit"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_partner"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/event_top_img"
+        app:layout_constraintBottom_toBottomOf="@+id/event_center_bg"
+        app:layout_constraintLeft_toLeftOf="@+id/event_center_bg"
+        app:layout_constraintRight_toRightOf="@+id/event_center_bg"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/event_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:src="@drawable/event_close_button"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

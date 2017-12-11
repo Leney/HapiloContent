@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/live_people_item_bg"
+              android:paddingBottom="@dimen/space_4"
+              android:paddingEnd="@dimen/space_5"
+              android:paddingLeft="@dimen/space_4"
+              android:paddingRight="@dimen/space_5"
+              android:paddingStart="@dimen/space_3"
+              android:paddingTop="@dimen/space_4"
+              android:layout_marginTop="@dimen/space_5">
+    <ImageView
+        android:id="@+id/live_people_item_icon"
+        android:layout_width="@dimen/space_53"
+        android:layout_height="@dimen/space_53"
+        android:scaleType="fitXY"
+        android:src="@drawable/watch_head"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/live_people_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9d4e2a"
+        android:text="土豆"
+        android:layout_marginLeft="@dimen/space_18"
+        android:layout_marginStart="@dimen/space_18"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/live_people_item_icon"
+        android:layout_toRightOf="@id/live_people_item_icon"
+        android:layout_centerVertical="true"/>
+
+
+    <!--举手等状态部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="end">
+        <!-- 举手-->
+        <ImageView
+            android:id="@+id/live_people_item_hands_up_img"
+            android:layout_width="@dimen/space_45"
+            android:layout_height="@dimen/space_45"
+            android:src="@drawable/hands_up_selector"/>
+
+        <FrameLayout
+            android:layout_width="@dimen/space_45"
+            android:layout_height="@dimen/space_45"
+            android:layout_marginLeft="@dimen/space_21"
+            android:layout_marginStart="@dimen/space_21">
+            <ImageView
+                android:id="@+id/live_people_item_talk_img"
+                android:layout_width="@dimen/space_45"
+                android:layout_height="@dimen/space_45"
+                android:src="@drawable/talk_selector"/>
+            <ImageView
+                android:id="@+id/live_people_forbid_tag"
+                android:layout_width="@dimen/space_14"
+                android:layout_height="@dimen/space_14"
+                android:src="@drawable/forbid"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/space_6"
+                android:layout_marginRight="@dimen/space_7"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

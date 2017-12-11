@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/props_bg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/props_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/props_bg2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/props_bg2"
+        app:layout_constraintBottom_toBottomOf="@+id/props_bg1"
+        app:layout_constraintLeft_toLeftOf="@+id/props_bg1"
+        app:layout_constraintRight_toRightOf="@+id/props_bg1"
+        app:layout_constraintTop_toTopOf="@+id/props_bg1" />
+
+    <com.zhongke.content.view.StrokeTextView
+        android:id="@+id/tv_props_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/props_red"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:textSize="19.3dp"
+        app:layout_constraintBottom_toTopOf="@+id/props_bg2"
+        app:layout_constraintLeft_toLeftOf="@+id/props_bg1"
+        app:layout_constraintTop_toTopOf="@+id/props_bg1" />
+
+    <ImageView
+        android:id="@+id/iv_knot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:src="@drawable/red_knot"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_props_name"
+        app:layout_constraintRight_toRightOf="@+id/props_bg1"
+        app:layout_constraintTop_toTopOf="@+id/tv_props_name" />
+
+    <ImageView
+        android:id="@+id/props_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/props_bg2"
+        app:layout_constraintLeft_toLeftOf="@+id/props_bg2"
+        app:layout_constraintRight_toRightOf="@+id/props_bg2"
+        app:layout_constraintTop_toTopOf="@+id/props_bg2" />
+</android.support.constraint.ConstraintLayout>

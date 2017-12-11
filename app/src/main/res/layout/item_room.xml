@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/room_item_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_room_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/room_number_bg"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#fbf4da"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_room_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:singleLine="true"
+        android:text="巅峰对决，就是现在"
+        android:textColor="#9c5e25"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_left_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="14dp"
+        android:gravity="left"
+        android:text="9"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_xiegang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_marginRight="14dp"
+        android:gravity="right"
+        android:text="/"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_right_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="14dp"
+        android:gravity="left"
+        android:text="10"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/room_stage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="13dp"
+        android:src="@mipmap/join_room" />
+</LinearLayout>

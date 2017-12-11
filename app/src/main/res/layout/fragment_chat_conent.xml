@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/second_not_normal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/chat_second_content_bg"
+        android:orientation="vertical"
+        android:paddingTop="6dp">
+
+        <FrameLayout
+            android:id="@+id/chat_second_chat_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/chat_second_content_bg2">
+
+            <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+                android:id="@+id/chat_second_refreshlayout_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/space_5">
+
+                <com.zhongke.content.recyclerview.BaseRecyclerView
+                    android:id="@+id/chat_second_content_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+            <com.zhongke.content.view.PartInLayout
+                android:id="@+id/chat_part_in_list_lay"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="bottom"/>
+
+            <TextView
+                android:id="@+id/chat_second_chat_net_error_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chat_content_net_shape"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="网络连接异常，请重新设置"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+        <!-- 文本和表情的布局 -->
+
+        <RelativeLayout
+            android:id="@+id/chat_second_textmanager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:id="@+id/chat_second_content_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@mipmap/chat_second_voice_iv2"/>
+
+            <EditText
+                android:id="@+id/chat_second_content_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_toEndOf="@+id/chat_second_content_voice"
+                android:layout_toLeftOf="@+id/chat_second_content_emoji_iv"
+                android:layout_toRightOf="@+id/chat_second_content_voice"
+                android:layout_toStartOf="@+id/chat_second_content_emoji_iv"
+                android:background="@drawable/chat_second_text_input_bg"
+                android:hint="单行输入"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#9c7352"
+                android:textColorHint="#9c7352"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/chat_second_content_emoji_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/chat_second_content_send_btn"
+                android:src="@mipmap/chat_second_text_emoji_iv"/>
+
+            <ImageView
+                android:id="@+id/chat_second_content_send_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/chat_second_send_btn"/>
+        </RelativeLayout>
+
+        <!--表情区-->
+        <com.lqr.emoji.EmotionLayout
+            android:id="@+id/layout_elEmotion"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"/>
+        <!-- 录音-->
+        <RelativeLayout
+            android:id="@+id/chat_second_chat_voice_manager_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="0.5dp"
+            android:background="@drawable/voice_black_shape"
+            android:paddingBottom="8dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/chat_second_chat_content_keyboard_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@mipmap/chat_second_keyboard_iv"/>
+
+            <ImageView
+                android:id="@+id/chat_second_chat_content_emoji_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/chat_second_emoji_iv"/>
+
+            <ImageView
+                android:id="@+id/chat_second_chat_content_next_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:src="@mipmap/chat_second_next_iv"/>
+
+            <ImageView
+                android:id="@+id/chat_second_chat_content_press_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_second_chat_content_next_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:src="@mipmap/chat_second_press_say_iv"/>
+
+            <ImageView
+                android:id="@+id/chat_second_chat_content_voice_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_second_chat_content_press_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/chat_second_voice_normal"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
